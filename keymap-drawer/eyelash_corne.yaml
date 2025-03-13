@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&ESC'
+  - $$mdi:keyboard-esc$$
   - A
   - S
   - D
@@ -44,7 +44,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
-  - '&mt LCTRL'
+  - $$mdi:apple-keyboard-control$$
   - '&td0'
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - $$mdi:apple-keyboard-option$$
