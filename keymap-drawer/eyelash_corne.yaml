@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
+  - '&ESC'
   - A
   - S
   - D
@@ -28,7 +28,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - '&td0'
+  - $$mdi:keyboard-tab$$
   - Z
   - X
   - C
@@ -42,9 +42,9 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:backspace$$', h: LGUI}
+  - LGUI
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
-  - {t: GLOBE, h: '$$mdi:apple-keyboard-control$$'}
+  - '&mt LCTRL'
   - '&td0'
   - {t: '$$mdi:keyboard-return$$', h: QWERTY}
   - $$mdi:apple-keyboard-option$$
@@ -196,9 +196,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [2, 2]
+- p: [2, 3]
   k: $$mdi:keyboard-esc$$
-- p: [6, 7]
-  k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [7, 8]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [8, 9]
   k: $$mdi:backspace-reverse-outline$$
