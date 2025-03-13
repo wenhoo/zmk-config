@@ -49,12 +49,12 @@ layers:
   - '&td0'
   - $$mdi:apple-keyboard-option$$
   NUMBER:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:volume-high$$
   - BRI INC
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - $$mdi:skip-previous$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
@@ -62,7 +62,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:volume-low$$
   - $$mdi:brightness-7$$
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -77,12 +77,12 @@ layers:
   - $$mdi:arrow-right-bold$$
   - HOME
   - {t: PG UP, type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:volume-off$$
   - {t: '0', s: )}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - RGB EFF
+  - $$mdi:skip-next$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - RGB EFR
