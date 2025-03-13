@@ -56,19 +56,19 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <2 2>;
+            key-positions = <2 3>;
             bindings = <&kp ESC>;
         };
 
         combo_bspc {
             timeout-ms = <50>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
             bindings = <&kp BSPC>;
         };
 
         combo_del {
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
             bindings = <&kp DEL>;
         };
     };
@@ -80,9 +80,9 @@
             display-name = "QWERTY";
             bindings = <
 &none          &kp Q  &kp W      &kp E          &kp R        &kp T                              &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB        &kp A  &kp S      &kp D          &kp F        &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&td0           &kp Z  &kp X      &kp C          &kp V        &kp B       &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                                 &mt LGUI BSPC  &lt 1 SPACE  &mt LCTRL GLOBE                                          &td0   &lt 0 ENTER    &kp RALT
+&ESC           &kp A  &kp S      &kp D          &kp F        &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp TAB        &kp Z  &kp X      &kp C          &kp V        &kp B       &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                                 &kp LGUI     &lt 1 SPACE    &mt LCTRL                                          &td0   &lt 0 ENTER    &kp RALT
             >;
         };
 
