@@ -55,7 +55,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/CapsLock/cn-en Tap Dance";
             #binding-cells = <0>;
-            bindings = <&mt LEFT_CONTROL &m_2a>, <&m_2c>;
+            bindings = <&mt LEFT_CONTROL LA(RA)>, <&kp LC(RC)>>;
         };
 
 
