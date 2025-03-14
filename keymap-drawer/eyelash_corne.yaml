@@ -1,6 +1,6 @@
 layers:
   QWERTY:
-  - {t: '`', s: '~'}
+  - {t: '`', h: SYMBOL, s: '~'}
   - Q
   - W
   - E
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - F12
   - F7
   - F8
@@ -143,11 +143,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
-  - '&studio_unlock'
+  - {t: '&studio_unlock', type: held}
   - F1
   - F2
   - F3
