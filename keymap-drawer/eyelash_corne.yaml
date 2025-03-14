@@ -47,7 +47,7 @@ layers:
   - '&td1'
   - {t: '$$mdi:keyboard-return$$', h: fn}
   - '&td0'
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
   NUM&SYM:
   - $$mdi:volume-high$$
   - BRI INC
