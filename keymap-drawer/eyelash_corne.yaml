@@ -1,6 +1,6 @@
 layers:
   QWERTY:
-  - {t: '`', h: SYMBOL, s: '~'}
+  - {t: '`', h: fn, s: '~'}
   - Q
   - W
   - E
@@ -27,7 +27,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '''', h: NUMBER, s: '"'}
+  - {t: '''', h: NUM&SYM, s: '"'}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
@@ -43,12 +43,12 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - LGUI
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-space$$', h: NUM&SYM}
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-return$$', h: fn}
   - '&td0'
   - $$mdi:apple-keyboard-option$$
-  NUMBER:
+  NUM&SYM:
   - $$mdi:volume-high$$
   - BRI INC
   - {t: '7', s: '&'}
@@ -97,7 +97,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  SYMBOL:
+  fn:
   - {type: held}
   - F12
   - F7
