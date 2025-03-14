@@ -34,7 +34,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/CapsLock/cn-en Tap Dance";
             #binding-cells = <0>;
-            bindings = <&mt LEFT_SHIFT LGUI(SPACE)>, <&kp CAPS>;
+            bindings = <&mt LEFT_SHIFT LG(SPACE)>, <&kp CAPS>;
         };
     };
 
@@ -106,7 +106,7 @@
         };
 
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "NUM&SYM";
             bindings = <
 &kp C_VOL_UP  &kp C_BRI_INC    &kp N7    &kp N8        &kp N9  &kp C_PREV                                        &mmv MOVE_UP                     &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &kp BSPC
 &kp C_VOL_DN  &kp C_BRI_DEC   &kp N4    &kp N5        &kp N6        &kp C_PP                     &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT      &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
@@ -116,7 +116,7 @@
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "fn";
             bindings = <
 &trans  &kp F12  &kp F7      &kp F8          &kp F9        &trans                           &mmv MOVE_UP                     &kp MINUS  &kp C_AC_SCROLL_DOWN  &kp C_AC_SCROLL_UP   &kp RBKT  &kp BSLH  &kp GRAVE
 &trans  &kp F11  &kp F4      &kp F5          &kp F6        &trans           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT     &kp DOWN     &kp UP     &kp RIGHT    &kp HOME  &kp PG_UP
