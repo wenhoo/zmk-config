@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/CapsLock/cn-en Tap Dance";
             #binding-cells = <0>;
-            bindings = <&mt LEFT_GUI BSPC>, <&kp LG(RGUI)>;
+            bindings = <&mt LEFT_GUI ESC>, <&kp LG(RGUI)>;
         };
 
 
