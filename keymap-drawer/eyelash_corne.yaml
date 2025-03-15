@@ -42,7 +42,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - LGUI
+  - '&td2'
   - {t: '$$mdi:keyboard-space$$', h: NUM&SYM}
   - '&td1'
   - {t: '$$mdi:keyboard-return$$', h: fn}
