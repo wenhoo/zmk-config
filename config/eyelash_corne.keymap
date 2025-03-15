@@ -31,13 +31,11 @@
 
 ZMK_MOD_MORPH(bs_del_num,
     bindings = <&lt NUM BSPC>, <&kp DEL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
+    mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 ZMK_TAP_DANCE(copy_cut,
     tapping-term-ms = <200>;
-    bindings = <&kp LC(INS)>, <&kp LC(X)>;
-)
+    bindings = <&kp LC(INS)>, <&kp LC(X)>;)
 
 ZMK_COMBO(copy_cut, &copy_cut,   LB2 LB3, ALL)
 
