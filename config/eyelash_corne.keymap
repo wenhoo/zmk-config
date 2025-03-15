@@ -30,20 +30,6 @@
 
 / {
     behaviors {
-        m_2a: macro_2alt {
-            compatible = "zmk,behavior-macro";
-            label = "Macro 1";
-            #binding-cells = <0>;
-            bindings = <&kp LALT>, <&kp LALT>;
-        };
-
-        m_2c: macro_2control {
-            compatible = "zmk,behavior-macro";
-            label = "Macro 2";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&kp LCTRL>;
-        };
-
         td0: super_shift {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/CapsLock/cn-en Tap Dance";
@@ -56,6 +42,13 @@
             display-name = "Shift/CapsLock/cn-en Tap Dance";
             #binding-cells = <0>;
             bindings = <&mt LEFT_CONTROL LA(RALT)>, <&kp LC(RCTRL)>;
+        };
+
+        td2: super_command {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/CapsLock/cn-en Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&mt LEFT_GUI BSPC>, <&kp LG(RGUI)>;
         };
 
 
@@ -121,40 +114,40 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&lt 2 GRAVE       &kp Q  &kp W      &kp E          &kp R        &kp T                              &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&mt LALT  ESC   &kp A  &kp S      &kp D          &kp F        &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &lt 1 SQT
-&mt LSHFT TAB   &kp Z  &kp X      &kp C          &kp V        &kp B       &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                                 &kp LGUI     &lt 1 SPACE    &td1                                                      &lt 2 ENTER      &td0       &mt RALT BSPC
+&lt 2 GRAVE       &kp Q  &kp W      &kp E          &kp R        &kp T            &none                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&mt LALT  ESC   &kp A  &kp S      &kp D          &kp F        &kp G        &none &none &none         &kp H   &kp J  &kp K      &kp L    &kp SEMI  &lt 1 SQT
+&mt LSHFT TAB   &kp Z  &kp X      &kp C          &kp V        &kp B        &none &none              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                                 &kp LGUI     &lt 1 SPACE    &td1                                          &lt 2 ENTER      &td0       &mt RALT BSPC
             >;
         };
 
         lower_layer {
             display-name = "NUM&SYM";
             bindings = <
-&kp C_VOL_UP  &kp C_BRI_INC    &kp N7    &kp N8        &kp N9  &kp C_PREV                                        &mmv MOVE_UP                     &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &kp BSPC
-&kp C_VOL_DN  &kp C_BRI_DEC   &kp N4    &kp N5        &kp N6        &kp C_PP                     &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT      &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-&kp C_MUTE  &kp N0         &kp N1    &kp N2        &kp N3        &kp C_NEXT &kp C_MUTE                    &mmv MOVE_DOWN                          &kp MINUS  &kp UNDER  &kp EQUAL  &kp PLUS  &kp BSLH   &kp PIPE
-                                         &trans        &trans        &trans                                                                         &trans      &trans      &trans          
+&kp C_VOL_UP  &kp C_BRI_INC    &kp N7    &kp N8        &kp N9  &kp C_PREV              &none                     &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &kp BSPC
+&kp C_VOL_DN  &kp C_BRI_DEC   &kp N4    &kp N5        &kp N6        &kp C_PP     &none &none &none      &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+&kp C_MUTE  &kp N0         &kp N1    &kp N2        &kp N3        &kp C_NEXT      &none &none                          &kp MINUS  &kp UNDER  &kp EQUAL  &kp PLUS  &kp BSLH   &kp PIPE
+                                         &trans        &trans        &trans                                                         &trans      &trans      &trans          
    >;
         };
 
         raise_layer {
             display-name = "fn";
             bindings = <
-&trans  &kp F12  &kp F7      &kp F8          &kp F9        &trans                           &mmv MOVE_UP                     &kp MINUS  &kp C_AC_SCROLL_DOWN  &kp C_AC_SCROLL_UP   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &kp F11  &kp F4      &kp F5          &kp F6        &trans           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT     &kp DOWN     &kp UP     &kp RIGHT    &kp HOME  &kp PG_UP
-&trans  &kp F10  &kp F1      &kp F2          &kp F3        &trans &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp END   &kp PG_DN
-                                    &trans  &trans     &trans                                                              &trans     &trans     &trans
+&trans  &kp F12  &kp F7      &kp F8          &kp F9        &trans           &none               &kp MINUS  &kp GLOBE  &kp C_AC_SCROLL_UP   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &kp F11  &kp F4      &kp F5          &kp F6        &trans     &none &none &none        &kp LEFT     &kp DOWN     &kp UP     &kp RIGHT    &kp LBRC  &kp UNDER
+&trans  &kp F10  &kp F1      &kp F2          &kp F3        &trans     &trans &none             &kp HOME  &kp PG_DN   &kp PG_UP   &kp END  &kp PLUS   &kp RBRC
+                                    &trans  &trans     &trans                                                  &trans     &trans     &trans
             >;
         };
 
         layer_3 {
             display-name = "Fn";
             bindings = <
-&studio_unlock   &kp F1      &kp F2      &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans  &trans      &mkp LCLK   &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans  &sys_reset  &trans      &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                &trans      &trans      &trans                                                                   &trans       &trans     &trans
+&studio_unlock   &kp F1      &kp F2      &kp F3       &kp F4     &kp F5              &none               &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&trans  &trans      &mkp LCLK   &mkp MCLK    &mkp RCLK  &mkp MB4               &none &none &none          &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans  &sys_reset  &trans      &bootloader  &trans     &mkp MB5               &none &none           &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                &trans      &trans      &trans                                                       &trans       &trans     &trans
             >;
         };
     };
