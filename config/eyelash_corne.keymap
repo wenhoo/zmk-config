@@ -34,6 +34,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/CapsLock/cn-en Tap Dance";
             #binding-cells = <0>;
+            tapping-term-ms = <200>;
             bindings = <&mt LEFT_SHIFT LG(SPACE)>, <&kp CAPS>;
         };
 
@@ -41,6 +42,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/CapsLock/cn-en Tap Dance";
             #binding-cells = <0>;
+            tapping-term-ms = <200>;
             bindings = <&mt LEFT_CONTROL LA(RALT)>, <&kp LC(RCTRL)>;
         };
 
@@ -48,6 +50,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/CapsLock/cn-en Tap Dance";
             #binding-cells = <0>;
+            tapping-term-ms = <150>;
             bindings = <&mt LEFT_GUI ESC>, <&kp LG(RGUI)>;
         };
 
