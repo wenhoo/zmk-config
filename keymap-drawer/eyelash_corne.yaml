@@ -42,12 +42,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - '&td2'
+  - LGUI
   - {t: '$$mdi:keyboard-space$$', h: NUM&SYM}
-  - '&td1'
+  - LCTL
   - {t: '$$mdi:keyboard-return$$', h: fn}
   - '&td0'
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
+  - $$mdi:apple-keyboard-option$$
   NUM&SYM:
   - $$mdi:volume-high$$
   - BRI INC
@@ -105,7 +105,7 @@ layers:
   - F9
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '-', s: _}
+  - Gui+$$mdi:keyboard-space$$
   - GLOBE
   - AC SCROLL UP
   - {t: ']', s: '}'}
