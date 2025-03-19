@@ -93,7 +93,7 @@
         };
 
         mhsk: mode_hold_sticky_key {
-            compatible = "zmk,behavior-hold-tap,behavior-sticky-key";
+            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&mo>, <&sk>;
         };
