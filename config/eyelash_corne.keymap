@@ -94,6 +94,8 @@
 
         mhsk: mode_hold_sticky_key {
             compatible = "zmk,behavior-hold-tap";
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
             #binding-cells = <2>;
             bindings = <&mo>, <&sk>;
         };
