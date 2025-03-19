@@ -3,4 +3,3 @@ zmk/
 modules/
 tools/
 .west/
-keymap-drawer/
