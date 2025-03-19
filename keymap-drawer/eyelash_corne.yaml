@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - {t: 'Gui+Sft+$$mdi:apple-keyboard-option$$', h: Fn}
+  - {t: 'Gui+Sft+Alt+$$mdi:apple-keyboard-control$$', h: Fn}
   - Q
   - W
   - E
