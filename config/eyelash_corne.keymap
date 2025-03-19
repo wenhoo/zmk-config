@@ -70,13 +70,13 @@
               bindings = <&kp SPACE>;
           };
 
-          combo_left {
+          combo_lbkt {
               timeout-ms = <50>;
               key-positions = <23 24>;
               bindings = <&kp LBKT>;
           };
 
-          combo_right {
+          combo_rbkt {
               timeout-ms = <50>;
               key-positions = <24 25>;
               bindings = <&kp RBKT>;
