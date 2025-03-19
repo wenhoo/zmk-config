@@ -96,7 +96,7 @@
             compatible = "zmk,behavior-hold-tap,behavior-sticky-key";
             #binding-cells = <2>;
             bindings = <&mo>, <&sk>;
-        }
+        };
     };
 
     rgb_encoder: rgb_encoder {
