@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - '&mhsk 2 LG(LS(LALT))'
+  - {t: 'Gui+Sft+$$mdi:apple-keyboard-option$$', h: Fn}
   - Q
   - W
   - E
@@ -99,7 +99,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - F12
   - F7
   - F8
@@ -144,11 +144,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYS:
-  - '&studio_unlock'
+  - {t: '&studio_unlock', type: held}
   - F1
   - F2
   - F3
