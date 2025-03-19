@@ -92,8 +92,8 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        mhsk: mode_hold_stiky_key {
-            compatible = "zmk,behavior-hold-tap,behavior-sticky-key"
+        mhsk: mode_hold_sticky_key {
+            compatible = "zmk,behavior-hold-tap,behavior-sticky-key";
             #binding-cells = <2>;
             bindings = <&mo>, <&sk>;
         }
