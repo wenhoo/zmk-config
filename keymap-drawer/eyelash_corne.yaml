@@ -197,7 +197,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [3, 16]
+- p: [2, 15]
   k: $$mdi:keyboard-esc$$
 - p: [15, 16]
   k: $$mdi:keyboard-tab$$
@@ -207,17 +207,17 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [9, 24]
   k: $$mdi:keyboard-space$$
-- p: [23, 24]
+- p: [8, 9]
   k: {h: '[', s: '{'}
-- p: [24, 25]
+- p: [9, 10]
   k: {h: ']', s: '}'}
-- p: [2, 15]
+- p: [14, 15]
   k: {t: '`', s: '~'}
 - p: [7, 22]
   k: $$mdi:keyboard-esc$$
-- p: [3, 4]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [4, 17]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [3, 16]
   k: {t: 'Gui+Sft+Alt+$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
 - p: [3, 16]
   k: $$mdi:arrow-up-bold$$
