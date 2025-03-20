@@ -201,6 +201,7 @@ combos:
   k: $$mdi:keyboard-esc$$
 - p: [15, 16]
   k: $$mdi:keyboard-tab$$
+  l: [QWERTY, Fn, SYS]
 - p: [8, 23]
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [10, 25]
@@ -219,6 +220,7 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [3, 16]
   k: {t: 'Gui+Sft+Alt+$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY, Fn, SYS]
 - p: [3, 16]
   k: $$mdi:arrow-up-bold$$
   l: [NUM&SYM]
