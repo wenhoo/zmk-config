@@ -97,7 +97,7 @@
 
           combo_l_enter {
               timeout-ms = <50>;
-              key-positions = <4 17>;
+              key-positions = <17 32>;
               bindings = <&kp ENTER>;
           };
 
@@ -136,6 +136,12 @@
               bindings = <&kp RIGHT>;
           };
 
+          combo_fn {
+              timeout-ms = <50>;
+              layers = <1>;
+              key-positions = <4 17>;
+              bindings = <&kp GLOBE>;
+          };
     };
 
     behaviors {
@@ -143,7 +149,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings = <&kp RIGHT_SHIFT>, <&kp CAPS>;
         };
 
         mhsk: mode_hold_sticky_key {
