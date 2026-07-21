@@ -138,7 +138,6 @@
 
           combo_fn {
               timeout-ms = <50>;
-              layers = <1>;
               key-positions = <4 17>;
               bindings = <&kp GLOBE>;
           };
