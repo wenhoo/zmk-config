@@ -216,7 +216,7 @@ combos:
   k: {t: '`', s: '~'}
 - p: [7, 22]
   k: $$mdi:keyboard-esc$$
-- p: [4, 17]
+- p: [17, 32]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [3, 16]
   k: {t: 'Gui+Sft+Alt+$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -232,4 +232,7 @@ combos:
   l: [NUM&SYM]
 - p: [16, 17]
   k: $$mdi:arrow-right-bold$$
+  l: [NUM&SYM]
+- p: [4, 17]
+  k: GLOBE
   l: [NUM&SYM]
