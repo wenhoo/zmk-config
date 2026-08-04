@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', h: NUM&SYM}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$'}
+  - $$mdi:apple-keyboard-option$$
   - A
   - S
   - D
@@ -44,11 +44,11 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - LGUI
-  - {t: '$$mdi:keyboard-space$$', h: NUM&SYM}
+  - NUM&SYM
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Fn
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
   NUM&SYM:
   - $$mdi:volume-high$$
   - {t: '$$mdi:backspace$$', type: backspace}
