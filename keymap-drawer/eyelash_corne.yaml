@@ -235,3 +235,5 @@ combos:
   l: [NUM&SYM]
 - p: [4, 17]
   k: GLOBE
+- p: [16, 17]
+  k: $$mdi:keyboard-space$$
