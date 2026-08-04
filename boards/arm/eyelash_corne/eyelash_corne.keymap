@@ -141,6 +141,12 @@
               key-positions = <4 17>;
               bindings = <&kp GLOBE>;
           };
+
+          combo_left_space {
+              timeout-ms = <50>;
+              key-positions = <16 17>;
+              bindings = <&kp SPACE>;
+          };
     };
 
     behaviors {
