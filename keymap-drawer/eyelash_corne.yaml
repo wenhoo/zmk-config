@@ -29,7 +29,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&td0'
   - Z
   - X
   - C
@@ -46,8 +46,8 @@ layers:
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: NUM&SYM}
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - '&td0'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - Fn
   - $$mdi:apple-keyboard-option$$
   NUM&SYM:
   - $$mdi:volume-high$$
@@ -109,9 +109,9 @@ layers:
   - Gui+$$mdi:keyboard-space$$
   - $$mdi:brightness-7$$
   - BRI INC
-  - {t: ']', s: '}'}
-  - {t: \, s: '|'}
-  - {t: '`', s: '~'}
+  - AC ZOOM IN
+  - AC ZOOM OUT
+  - SLEEP
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F4
@@ -144,8 +144,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   SYS:
   - {t: '&studio_unlock', type: held}
@@ -193,8 +193,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [2, 15]
