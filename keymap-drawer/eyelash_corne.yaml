@@ -46,8 +46,8 @@ layers:
   - LGUI
   - NUM&SYM
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - Fn
+  - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   NUM&SYM:
   - $$mdi:volume-high$$
@@ -144,8 +144,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYS:
   - {t: '&studio_unlock', type: held}
@@ -193,8 +193,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [2, 15]
@@ -237,3 +237,5 @@ combos:
   k: GLOBE
 - p: [16, 17]
   k: $$mdi:keyboard-space$$
+- p: [23, 37]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
