@@ -29,7 +29,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - '&td0'
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -48,7 +48,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - Fn
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-shift$$
+  - '&td0'
   NUM&SYM:
   - $$mdi:volume-high$$
   - {t: '$$mdi:backspace$$', type: backspace}
